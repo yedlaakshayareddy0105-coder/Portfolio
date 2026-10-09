@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- =====================================================================
+         METADATA & DOCUMENT CONFIGURATION
+         HTML5 semantic standard headers, UTF-8 character encoding,
+         and responsive mobile viewport definitions.
+         ===================================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional developer portfolio of Yedla Akshaya Reddy - Integrated M.Tech Computer Science student at VIT specializing in Software Development, Cloud Computing, and AI.">
+    <meta name="author" content="Yedla Akshaya Reddy">
+
+    <title>Yedla Akshaya Reddy | Student Developer Portfolio</title>
+
+    <!-- Google Fonts: Plus Jakarta Sans (Headings & Body) and Fira Code (Code Snippets) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5.3.3 CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons 1.11.3 (CDN) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom Portfolio Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================================
+         1. NAVIGATION BAR (BOOTSTRAP COMPONENT)
+         Uses Bootstrap's .navbar, .navbar-expand-lg, and fixed-top positioning.
+         Includes responsive hamburger toggler for mobile devices.
+         ===================================================================== -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="mainNav">
+        <div class="container">
+            <!-- Brand Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="#hero">
+                <span class="brand-badge">&lt;AR/&gt;</span>
+                <span class="ms-2">Akshaya Reddy</span>
+            </a>
+
+            <!-- Mobile Menu Toggle Button (Accessible Hamburger) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certificates">Certificates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#funfacts">Fun Facts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <!-- Resume Trigger Modal Button -->
+                        <button type="button" class="btn btn-outline-cyan btn-sm w-100" data-bs-toggle="modal" data-bs-target="#resumeModal">
+                            <i class="bi bi-file-earmark-person"></i> Resume
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- =====================================================================
+         2. HERO SECTION
+         Main introduction presenting name, role, background, and quick action buttons.
+         Uses Bootstrap Grid: .row and responsive .col-lg-* columns.
+         ===================================================================== -->
+    <header id="hero" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Left Column: Introduction & CTA Buttons -->
+                <div class="col-lg-7">
+                    <div class="hero-badge-pill mb-3">
+                        <i class="bi bi-patch-check-fill text-cyan"></i>
+                        <span>Integrated M.Tech Computer Science  VIT</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        YEDLA <span class="text-gradient">AKSHAYA REDDY</span>
+                    </h1>
+
+                    <div class="hero-subtitle">
+                        Computer Science Student | <span id="typing-text" class="text-cyan"></span><span class="typing-cursor">|</span>
+                    </div>
+
+                    <p class="hero-description">
+                        Passionate Computer Science student with a strong foundation in software engineering, 
+                        modern web applications, cloud technologies, and artificial intelligence. 
+                        Dedicated to solving complex problems through clean architecture and continuous learning.
+                    </p>
+
+                    <!-- Call To Action (CTA) Buttons -->
+                    <div class="hero-buttons d-flex flex-wrap gap-3 mb-4">
+                        <a href="#projects" class="btn btn-cyan">
+                            <i class="bi bi-folder2-open"></i> View My Projects
+                        </a>
+                        <a href="#contact" class="btn btn-outline-cyan">
+                            <i class="bi bi-envelope"></i> Contact Me
+                        </a>
+                        <button type="button" class="btn btn-outline-purple" data-bs-toggle="modal" data-bs-target="#resumeModal">
+                            <i class="bi bi-download"></i> Download Resume
+                        </button>
+                    </div>
+
+                    <!-- Status Tags -->
+                    <div class="hero-status-tags">
+                        <div class="status-tag">
+                            <i class="bi bi-geo-alt-fill"></i> VIT University
+                        </div>
+                        <div class="status-tag">
+                            <i class="bi bi-mortarboard-fill"></i> 3rd Year Student
+                        </div>
+                        <div class="status-tag">
+                            <i class="bi bi-code-slash"></i> Placement Ready
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Interactive Code & Profile Window -->
+                <!-- Right Column: Profile Window -->
+<div class="col-lg-5 mt-5 mt-lg-0">
+    <div class="dev-showcase-card">
+
+        <!-- Window Header -->
+        <div class="dev-card-header">
+            <div class="window-dots">
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-green"></span>
+            </div>
+
+            <span class="window-title">akshaya-profile.json</span>
+
+            <span class="badge bg-success bg-opacity-25 text-success small border border-success border-opacity-50">
+                Active
+            </span>
+        </div>
+
+        <!-- Photo + Caption -->
+        <div class="dev-card-body text-center">
+
+            <div class="profile-photo-caption-box">
+
+                <!-- Rounded Photo -->
+               <!-- YR Initials -->
+<div class="avatar-wrapper">
+    <span class="profile-initials">YR</span>
+</div>
+
+                <!-- Caption -->
+                <div class="profile-caption">
+                    <p>
+                        Transforming experiences into knowledge, challenges into capabilities,
+                        and aspirations into continuous growth.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+                       
+    </header>
+
+
+    <!-- =====================================================================
+         3. ABOUT ME SECTION
+         Concise profile detailing CS foundation, software development,
+         cloud, AI/ML, problem-solving, and continuous learning.
+         ===================================================================== -->
+    <section id="about" class="section-padding about-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center">
+                <span class="section-tag">01 Profile</span>
+                <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+                <p class="section-subtitle">
+                    A dedicated Computer Science student committed to building dependable, scalable, 
+                    and practical software systems.
+                </p>
+            </div>
+
+            <div class="row g-4 align-items-stretch">
+                <!-- Left: 4 Key Capability Pillars -->
+                <div class="col-lg-7">
+                    <div class="row g-3 h-100">
+                        <div class="col-md-6">
+                            <div class="about-card">
+                                <div class="about-icon-box">
+                                    <i class="bi bi-laptop"></i>
+                                </div>
+                                <h3 class="h5 fw-bold text-white mb-2">Software Development</h3>
+                                <p class="text-secondary small mb-0">
+                                    Strong grounding in object-oriented programming, data structures, and modular 
+                                    code design across C, Java, and modern web environments.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="about-card">
+                                <div class="about-icon-box purple">
+                                    <i class="bi bi-cpu"></i>
+                                </div>
+                                <h3 class="h5 fw-bold text-white mb-2">AI & Machine Learning</h3>
+                                <p class="text-secondary small mb-0">
+                                    Passionate about training predictive models, analyzing multi-attribute datasets, 
+                                    and integrating AI capabilities into accessible web solutions.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="about-card">
+                                <div class="about-icon-box purple">
+                                    <i class="bi bi-cloud-check"></i>
+                                </div>
+                                <h3 class="h5 fw-bold text-white mb-2">Cloud Computing</h3>
+                                <p class="text-secondary small mb-0">
+                                    Exploring cloud infrastructure, scalable backend services, RESTful communication, 
+                                    and distributed database architectures.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="about-card">
+                                <div class="about-icon-box">
+                                    <i class="bi bi-lightning-charge"></i>
+                                </div>
+                                <h3 class="h5 fw-bold text-white mb-2">Problem Solving & Growth</h3>
+                                <p class="text-secondary small mb-0">
+                                    Approaches challenges with analytical rigor, iterative testing, and an eagerness 
+                                    to learn and adopt emerging technologies rapidly.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Profile Summary Card -->
+                <div class="col-lg-5">
+                    <div class="about-summary-card h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <h3 class="h4 fw-bold text-white mb-3">Academic & Developer Snapshot</h3>
+                            <p class="text-secondary small mb-4">
+                                Currently in my 3rd year at VIT, I combine solid academic theory in algorithms and databases 
+                                with hands-on project implementations. I take pride in writing understandable, maintainable 
+                                code and collaborating effectively in team settings.
+                            </p>
+
+                            <div class="profile-specs mb-4">
+                                <div class="profile-spec-item">
+                                    <span class="spec-label">Degree</span>
+                                    <span class="spec-value">Integrated M.Tech CSE</span>
+                                </div>
+                                <div class="profile-spec-item">
+                                    <span class="spec-label">University</span>
+                                    <span class="spec-value">VIT</span>
+                                </div>
+                                <div class="profile-spec-item">
+                                    <span class="spec-label">Current Academic Level</span>
+                                    <span class="spec-value">3rd Year</span>
+                                </div>
+                                <div class="profile-spec-item">
+                                    <span class="spec-label">Primary Interests</span>
+                                    <span class="spec-value">AI/ML, Cloud, Web Dev</span>
+                                </div>
+                                <div class="profile-spec-item">
+                                    <span class="spec-label">Career Goal</span>
+                                    <span class="spec-value">Software Engineer / Tech Lead</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-3 border-top border-secondary border-opacity-25 d-flex gap-2">
+                            <a href="#contact" class="btn btn-cyan btn-sm flex-grow-1">
+                                <i class="bi bi-chat-dots"></i> Get in Touch
+                            </a>
+                            <button type="button" class="btn btn-outline-cyan btn-sm" id="copyEmailBtn" data-email="akshaya.reddy@vit.ac.in">
+                                <i class="bi bi-clipboard"></i> Copy Email
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =====================================================================
+         4. EDUCATION SECTION
+         Structured academic timeline for VIT Integrated M.Tech (3rd Year).
+         No invented marks, CGPA, or unauthorized claims.
+         ===================================================================== -->
+    <section id="education" class="section-padding education-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center">
+                <span class="section-tag">02  Academics</span>
+                <h2 class="section-title">My <span class="text-gradient">Education</span></h2>
+                <p class="section-subtitle">
+                    Strong academic foundation in computer science principles, system architecture, and computational methods.
+                </p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- Main Education Card -->
+                    <div class="education-timeline-card">
+                        <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3">
+                            <div>
+                                <h3 class="edu-institution mb-1">Vellore Institute of Technology (VIT)</h3>
+                                <div class="edu-degree">Integrated Master of Technology (Integrated M.Tech)</div>
+                                <div class="text-secondary fw-semibold">Computer Science & Engineering</div>
+                            </div>
+                            <div class="edu-badge">
+                                <i class="bi bi-calendar-check me-1"></i> 3rd Year • In Progress
+                            </div>
+                        </div>
+
+                        <p class="text-secondary small mb-3">
+                            Enrolled in a comprehensive five-year integrated postgraduate engineering program 
+                            designed to master foundational theoretical computing as well as modern enterprise-scale application engineering.
+                        </p>
+
+                        <!-- Key Relevant Coursework -->
+                        <div>
+                            <span class="text-white small fw-bold d-block mb-2">Key Core Coursework Covered:</span>
+                            <div class="coursework-badges">
+                                <span class="coursework-badge"><i class="bi bi-check2 text-cyan me-1"></i>Data Structures & Algorithms</span>
+                                <span class="coursework-badge"><i class="bi bi-check2 text-cyan me-1"></i>Database Management Systems (DBMS)</span>
+                                <span class="coursework-badge"><i class="bi bi-check2 text-cyan me-1"></i>Object-Oriented Programming (Java / C++)</span>
+                                <span class="coursework-badge"><i class="bi bi-check2 text-cyan me-1"></i>Operating Systems</span>
+                                <span class="coursework-badge"><i class="bi bi-check2 text-cyan me-1"></i>Computer Networks</span>
+                                <span class="coursework-badge"><i class="bi bi-check2 text-cyan me-1"></i>Software Engineering</span>
+                                <span class="coursework-badge"><i class="bi bi-check2 text-cyan me-1"></i>Data Warehousing & Data Mining</span>
+                                <span class="coursework-badge"><i class="bi bi-check2 text-cyan me-1"></i>Cloud & Distributed Systems</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =====================================================================
+         5. SKILLS SECTION
+         Visual skill cards covering all 12 requested competencies:
+         HTML, CSS, Bootstrap, JavaScript, C, Java, Python, SQL, MongoDB,
+         Git/GitHub, Cloud Computing, AI/ML.
+         Includes interactive category filtering via JavaScript.
+         ===================================================================== -->
+    <section id="skills" class="section-padding skills-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center">
+                <span class="section-tag">03  Competencies</span>
+                <h2 class="section-title">Technical <span class="text-gradient">Skills</span></h2>
+                <p class="section-subtitle">
+                    Core programming languages, web standards, databases, and emerging technologies used across my projects.
+                </p>
+
+                <!-- Filter Controls -->
+                <div class="d-flex flex-wrap justify-content-center gap-2 mb-5">
+                    <button type="button" class="skill-filter-btn active" data-filter="all">All Skills</button>
+                    <button type="button" class="skill-filter-btn" data-filter="languages">Programming Languages</button>
+                    <button type="button" class="skill-filter-btn" data-filter="web">Web Technologies</button>
+                    <button type="button" class="skill-filter-btn" data-filter="data-cloud">Database & Cloud</button>
+                    <button type="button" class="skill-filter-btn" data-filter="tools-ai">AI & Developer Tools</button>
+                </div>
+            </div>
+
+            <!-- Skills Grid (12 Required Skills) -->
+            <div class="row g-4" id="skillsGrid">
+
+                <!-- 1. HTML -->
+                <div class="col-sm-6 col-lg-3 skill-card-col" data-category="web">
+                    <div class="skill-card">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-wrap">
+                                <i class="bi bi-filetype-html"></i>
+                            </div>
+                            <div>
+                                <h3 class="skill-name">HTML5</h3>
+                                <span class="skill-category-tag">Web Technologies</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Semantic document markup, accessibility standards, and clean page structuring.</p>
+                    </div>
+                </div>
+
+                <!-- 2. CSS -->
+                <div class="col-sm-6 col-lg-3 skill-card-col" data-category="web">
+                    <div class="skill-card">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-wrap">
+                                <i class="bi bi-filetype-css"></i>
+                            </div>
+                            <div>
+                                <h3 class="skill-name">CSS3</h3>
+                                <span class="skill-category-tag">Web Technologies</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Responsive layouts, Flexbox, CSS Grid, custom properties (variables), and transitions.</p>
+                    </div>
+                </div>
+
+                <!-- 3. Bootstrap -->
+                <div class="col-sm-6 col-lg-3 skill-card-col" data-category="web">
+                    <div class="skill-card purple-accent">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-wrap">
+                                <i class="bi bi-bootstrap-fill"></i>
+                            </div>
+                            <div>
+                                <h3 class="skill-name">Bootstrap 5</h3>
+                                <span class="skill-category-tag">Frontend Framework</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Rapid UI prototyping, 12-column grid system, utility classes, and accessible components.</p>
+                    </div>
+                </div>
+
+                <!-- 4. JavaScript -->
+                <div class="col-sm-6 col-lg-3 skill-card-col" data-category="web">
+                    <div class="skill-card">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-wrap">
+                                <i class="bi bi-filetype-js"></i>
+                            </div>
+                            <div>
+                                <h3 class="skill-name">JavaScript</h3>
+                                <span class="skill-category-tag">Web & Scripting</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">ES6+ syntax, DOM manipulation, asynchronous callbacks, and client-side form validation.</p>
+                    </div>
+                </div>
+
+                <!-- 5. C -->
+                <div class="col-sm-6 col-lg-3 skill-card-col" data-category="languages">
+                    <div class="skill-card">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-wrap">
+                                <i class="bi bi-c-circle"></i>
+                            </div>
+                            <div>
+                                <h3 class="skill-name">C Language</h3>
+                                <span class="skill-category-tag">Systems & Logic</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Memory management, pointers, fundamental data structures, and algorithm complexity.</p>
+                    </div>
+                </div>
+
+                <!-- 6. Java -->
+                <div class="col-sm-6 col-lg-3 skill-card-col" data-category="languages">
+                    <div class="skill-card purple-accent">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-wrap">
+                                <i class="bi bi-cup-hot"></i>
+                            </div>
+                            <div>
+                                <h3 class="skill-name">Java</h3>
+                                <span class="skill-category-tag">Object-Oriented</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">OOP encapsulation, inheritance, polymorphism, Java Collections Framework, and robustness.</p>
+                    </div>
+                </div>
+
+                <!-- 7. Python -->
+                <div class="col-sm-6 col-lg-3 skill-card-col" data-category="languages">
+                    <div class="skill-card">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-wrap">
+                                <i class="bi bi-filetype-py"></i>
+                            </div>
+                            <div>
+                                <h3 class="skill-name">Python</h3>
+                                <span class="skill-category-tag">Scripting & Data</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Data processing, machine learning workflows, automation scripting, and API services.</p>
+                    </div>
+                </div>
+
+                <!-- 8. SQL -->
+                <div class="col-sm-6 col-lg-3 skill-card-col" data-category="data-cloud">
+                    <div class="skill-card">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-wrap">
+                                <i class="bi bi-database"></i>
+                            </div>
+                            <div>
+                                <h3 class="skill-name">SQL</h3>
+                                <span class="skill-category-tag">Relational Database</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Relational schema design, normalization, complex joins, views, and data integrity constraints.</p>
+                    </div>
+                </div>
+
+                <!-- 9. MongoDB -->
+                <div class="col-sm-6 col-lg-3 skill-card-col" data-category="data-cloud">
+                    <div class="skill-card purple-accent">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-wrap">
+                                <i class="bi bi-server"></i>
+                            </div>
+                            <div>
+                                <h3 class="skill-name">MongoDB</h3>
+                                <span class="skill-category-tag">NoSQL Database</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Document-based data models, JSON/BSON structures, indexing, and aggregation pipelines.</p>
+                    </div>
+                </div>
+
+                <!-- 10. Git/GitHub -->
+                <div class="col-sm-6 col-lg-3 skill-card-col" data-category="tools-ai">
+                    <div class="skill-card">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-wrap">
+                                <i class="bi bi-git"></i>
+                            </div>
+                            <div>
+                                <h3 class="skill-name">Git & GitHub</h3>
+                                <span class="skill-category-tag">Version Control</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Branching, merging, commit discipline, pull requests, and collaborative code repository workflows.</p>
+                    </div>
+                </div>
+
+                <!-- 11. Cloud Computing -->
+                <div class="col-sm-6 col-lg-3 skill-card-col" data-category="data-cloud">
+                    <div class="skill-card">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-wrap">
+                                <i class="bi bi-cloud-arrow-up"></i>
+                            </div>
+                            <div>
+                                <h3 class="skill-name">Cloud Computing</h3>
+                                <span class="skill-category-tag">Distributed Systems</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Cloud architecture principles, virtualization, serverless models, and scalable hosting services.</p>
+                    </div>
+                </div>
+
+                <!-- 12. AI/ML -->
+                <div class="col-sm-6 col-lg-3 skill-card-col" data-category="tools-ai">
+                    <div class="skill-card purple-accent">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-wrap">
+                                <i class="bi bi-robot"></i>
+                            </div>
+                            <div>
+                                <h3 class="skill-name">AI / ML</h3>
+                                <span class="skill-category-tag">Intelligent Systems</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Supervised learning algorithms, regression, clustering models, and data mining methodologies.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =====================================================================
+         6. PROJECTS SECTION
+         Professional presentation of the 4 academic projects:
+         1. Cloud-Based Smart Crowdfunding Platform
+         2. Student Dropout Analysis using Data Warehousing and Data Mining
+         3. Solar Farm Performance Prediction using AI
+         4. AI-based E-Commerce / Shopping Assistant
+         Clean placeholders with modals; no fake GitHub links invented.
+         ===================================================================== -->
+    <section id="projects" class="section-padding projects-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center">
+                <span class="section-tag">04  Portfolio Work</span>
+                <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+                <p class="section-subtitle">
+                    Practical academic engineering projects demonstrating software development, machine learning, and cloud solutions.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- PROJECT 1: Crowdfunding Platform -->
+                <div class="col-lg-6">
+                    <article class="project-card">
+                        <div class="project-card-header">
+                            <span class="project-type-badge">Cloud & Full-Stack</span>
+                            <span class="project-number">01</span>
+                        </div>
+
+                        <div class="project-card-body">
+                            <h3 class="project-title">Cloud-Based Smart Crowdfunding Platform for Secure Fundraising</h3>
+                            <p class="project-description">
+                                A scalable cloud-hosted platform enabling social causes and tech innovators to launch 
+                                verified campaigns, manage donor pledges, and ensure transparency in fund distribution.
+                            </p>
+
+                            <!-- Key Contribution Highlight -->
+                            <div class="project-contribution-box">
+                                <div class="contribution-title">Key Academic Contribution:</div>
+                                Designed the campaign management workflow, responsive dashboard UI using Bootstrap, 
+                                and document schemas for storing verified transactions securely.
+                            </div>
+
+                            <!-- Tech Stack Badges -->
+                            <div class="tech-badges-wrap">
+                                <span class="tech-badge">Cloud Computing</span>
+                                <span class="tech-badge">MongoDB</span>
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">Bootstrap 5</span>
+                                <span class="tech-badge">HTML5/CSS3</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card-footer">
+                            <button type="button" class="btn btn-outline-cyan btn-sm flex-grow-1 placeholder-link" 
+                                data-type="GitHub Code" data-name="Cloud-Based Smart Crowdfunding Platform">
+                                <i class="bi bi-github"></i> GitHub Code
+                            </button>
+                            <button type="button" class="btn btn-outline-purple btn-sm flex-grow-1" 
+                                data-bs-toggle="modal" data-bs-target="#projectModal1">
+                                <i class="bi bi-eye"></i> Project Overview
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- PROJECT 2: Student Dropout Analysis -->
+                <div class="col-lg-6">
+                    <article class="project-card">
+                        <div class="project-card-header">
+                            <span class="project-type-badge">Data Mining & Analytics</span>
+                            <span class="project-number">02</span>
+                        </div>
+
+                        <div class="project-card-body">
+                            <h3 class="project-title">Student Dropout Analysis using Data Warehousing and Data Mining</h3>
+                            <p class="project-description">
+                                An educational data analytics system applying data warehousing methodologies and machine learning 
+                                algorithms to identify early academic risk factors and predict student attrition rates.
+                            </p>
+
+                            <!-- Key Contribution Highlight -->
+                            <div class="project-contribution-box">
+                                <div class="contribution-title">Key Academic Contribution:</div>
+                                Preprocessed multi-attribute student datasets, formulated predictive clustering and classification 
+                                pipelines in Python, and identified leading indicators affecting student retention.
+                            </div>
+
+                            <!-- Tech Stack Badges -->
+                            <div class="tech-badges-wrap">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Data Mining</span>
+                                <span class="tech-badge">SQL</span>
+                                <span class="tech-badge">Data Warehousing</span>
+                                <span class="tech-badge">Data Visualization</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card-footer">
+                            <button type="button" class="btn btn-outline-cyan btn-sm flex-grow-1 placeholder-link" 
+                                data-type="GitHub Code" data-name="Student Dropout Analysis">
+                                <i class="bi bi-github"></i> GitHub Code
+                            </button>
+                            <button type="button" class="btn btn-outline-purple btn-sm flex-grow-1" 
+                                data-bs-toggle="modal" data-bs-target="#projectModal2">
+                                <i class="bi bi-eye"></i> Project Overview
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- PROJECT 3: Solar Farm Performance Prediction -->
+                <div class="col-lg-6">
+                    <article class="project-card">
+                        <div class="project-card-header">
+                            <span class="project-type-badge">AI & Clean Energy</span>
+                            <span class="project-number">03</span>
+                        </div>
+
+                        <div class="project-card-body">
+                            <h3 class="project-title">Solar Farm Performance Prediction using AI</h3>
+                            <p class="project-description">
+                                An intelligent machine learning framework utilizing meteorological data, ambient temperature, 
+                                and solar irradiance records to forecast photovoltaic energy generation and optimize grid delivery.
+                            </p>
+
+                            <!-- Key Contribution Highlight -->
+                            <div class="project-contribution-box">
+                                <div class="contribution-title">Key Academic Contribution:</div>
+                                Engineered environmental feature extraction algorithms, implemented regression models for energy forecasting, 
+                                and benchmarked model accuracy against real-world solar telemetry.
+                            </div>
+
+                            <!-- Tech Stack Badges -->
+                            <div class="tech-badges-wrap">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Artificial Intelligence</span>
+                                <span class="tech-badge">Machine Learning</span>
+                                <span class="tech-badge">Weather APIs</span>
+                                <span class="tech-badge">NumPy/Pandas</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card-footer">
+                            <button type="button" class="btn btn-outline-cyan btn-sm flex-grow-1 placeholder-link" 
+                                data-type="GitHub Code" data-name="Solar Farm Performance Prediction">
+                                <i class="bi bi-github"></i> GitHub Code
+                            </button>
+                            <button type="button" class="btn btn-outline-purple btn-sm flex-grow-1" 
+                                data-bs-toggle="modal" data-bs-target="#projectModal3">
+                                <i class="bi bi-eye"></i> Project Overview
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- PROJECT 4: AI-based E-Commerce Assistant -->
+                <div class="col-lg-6">
+                    <article class="project-card">
+                        <div class="project-card-header">
+                            <span class="project-type-badge">AI & Web Application</span>
+                            <span class="project-number">04</span>
+                        </div>
+
+                        <div class="project-card-body">
+                            <h3 class="project-title">AI-based E-Commerce / Shopping Assistant</h3>
+                            <p class="project-description">
+                                An interactive e-commerce platform incorporating an intelligent conversational assistant 
+                                that suggests personalized products based on buyer preferences, budget constraints, and purchase intent.
+                            </p>
+
+                            <!-- Key Contribution Highlight -->
+                            <div class="project-contribution-box">
+                                <div class="contribution-title">Key Academic Contribution:</div>
+                                Developed the interactive front-end catalog using Bootstrap & JavaScript, integrated recommendation 
+                                scoring logic, and designed natural-language user query handling.
+                            </div>
+
+                            <!-- Tech Stack Badges -->
+                            <div class="tech-badges-wrap">
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Bootstrap 5</span>
+                                <span class="tech-badge">NLP Concepts</span>
+                                <span class="tech-badge">REST API</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card-footer">
+                            <button type="button" class="btn btn-outline-cyan btn-sm flex-grow-1 placeholder-link" 
+                                data-type="GitHub Code" data-name="AI-based E-Commerce Assistant">
+                                <i class="bi bi-github"></i> GitHub Code
+                            </button>
+                            <button type="button" class="btn btn-outline-purple btn-sm flex-grow-1" 
+                                data-bs-toggle="modal" data-bs-target="#projectModal4">
+                                <i class="bi bi-eye"></i> Project Overview
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =====================================================================
+         7. CERTIFICATES SECTION
+         Clean, structured certificate cards with titles, issuing bodies,
+         years, and placeholders for easy student customization.
+         No fake credentials invented.
+         ===================================================================== -->
+    <section id="certificates" class="section-padding certificates-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center">
+                <span class="section-tag">05  Credentials</span>
+                <h2 class="section-title">Certifications & <span class="text-gradient">Training</span></h2>
+                <p class="section-subtitle">
+                    Technical certifications and academic milestones supporting continuous professional learning.
+                </p>
+            </div>
+
+            <!-- Certificate Grid: 2 cards side-by-side on desktop -->
+            <div class="row g-4">
+
+                <!-- Certificate 1 -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="certificate-card h-100 d-flex flex-column">
+                        <div class="flex-grow-1">
+                            <div class="cert-icon">
+                                <i class="bi bi-trophy-fill"></i>
+                            </div>
+
+                            <h3 class="cert-title">WINS-AID AI Hackathon 2026</h3>
+
+                            <div class="cert-issuer">
+                                WINS-AID AI Hackathon 2026
+                            </div>
+
+                            <div class="cert-year">
+                                Year: September 2026
+                            </div>
+
+                            <p class="text-secondary small mb-0">
+                                Participated in a 24-hour AI hackathon focused on
+                                developing innovative technology solutions for real-world
+                                challenges. Gained hands-on experience in problem-solving,
+                                rapid prototyping, teamwork, and AI-based application
+                                development.
+                            </p>
+                        </div>
+
+                        <!-- Certificate button aligned to the right -->
+                        <div class="d-flex justify-content-end mt-4">
+                            <a href="C:\Users\Akshaya\Pictures\Screenshots\Screenshot 2026-10-09 184910.png"
+                               target="_blank"
+                               rel="noopener"
+                               class="btn btn-outline-cyan btn-sm">
+                                <i class="bi bi-award"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 2 -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="certificate-card h-100 d-flex flex-column">
+                        <div class="flex-grow-1">
+                            <div class="cert-icon">
+                                <i class="bi bi-cpu-fill"></i>
+                            </div>
+
+                            <h3 class="cert-title">Python for Data Science & AI</h3>
+
+                            <div class="cert-issuer">
+                                Coursera / Online Certification [Placeholder]
+                            </div>
+
+                            <div class="cert-year">
+                                Year: 2024
+                            </div>
+
+                            <p class="text-secondary small mb-0">
+                                Practical course in data manipulation with NumPy/Pandas,
+                                model evaluation, and foundational AI algorithms.
+                            </p>
+                        </div>
+
+                        <div class="d-flex justify-content-end mt-4">
+                            <button type="button"
+                                    class="btn btn-outline-cyan btn-sm placeholder-link"
+                                    data-type="Certificate"
+                                    data-name="Python for Data Science & AI">
+                                <i class="bi bi-award"></i> View Certificate
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 3 -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="certificate-card h-100 d-flex flex-column">
+                        <div class="flex-grow-1">
+                            <div class="cert-icon">
+                                <i class="bi bi-layout-text-window-reverse"></i>
+                            </div>
+
+                            <h3 class="cert-title">Responsive Web Design</h3>
+
+                            <div class="cert-issuer">
+                                freeCodeCamp / Dev Academy [Placeholder]
+                            </div>
+
+                            <div class="cert-year">
+                                Year: 2023
+                            </div>
+
+                            <p class="text-secondary small mb-0">
+                                Certified understanding of HTML5 semantic structure,
+                                CSS modern layouts, Flexbox, and mobile-friendly design.
+                            </p>
+                        </div>
+
+                        <div class="d-flex justify-content-end mt-4">
+                            <button type="button"
+                                    class="btn btn-outline-cyan btn-sm placeholder-link"
+                                    data-type="Certificate"
+                                    data-name="Responsive Web Design">
+                                <i class="bi bi-award"></i> View Certificate
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 4 -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="certificate-card h-100 d-flex flex-column">
+                        <div class="flex-grow-1">
+                            <div class="cert-icon">
+                                <i class="bi bi-database-check"></i>
+                            </div>
+
+                            <h3 class="cert-title">Database Management Systems</h3>
+
+                            <div class="cert-issuer">
+                                VIT Coursework / Certification Body [Placeholder]
+                            </div>
+
+                            <div class="cert-year">
+                                Year: 2024
+                            </div>
+
+                            <p class="text-secondary small mb-0">
+                                Comprehensive evaluation covering relational database
+                                normalization, transaction processing, and SQL optimization.
+                            </p>
+                        </div>
+
+                        <div class="d-flex justify-content-end mt-4">
+                            <button type="button"
+                                    class="btn btn-outline-cyan btn-sm placeholder-link"
+                                    data-type="Certificate"
+                                    data-name="Database Management Systems">
+                                <i class="bi bi-award"></i> View Certificate
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="funfacts" class="section-padding fun-facts-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center">
+                <span class="section-tag">06  Beyond The Code</span>
+                <h2 class="section-title">Fun Facts <span class="text-gradient">About Me</span></h2>
+                <p class="section-subtitle">
+                    A glimpse into my student life, personal interests, hobbies, and day-to-day motivations.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Fact 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="fun-fact-card">
+                        <div class="fun-fact-icon">
+                            <i class="bi bi-cpu"></i>
+                        </div>
+                        <div>
+                            <h3 class="fun-fact-title">💻 Technology Enthusiast</h3>
+                            <p class="fun-fact-text">
+                                Constantly fascinated by emerging tech innovations, gadgets, and computing breakthroughs reshaping industries.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fact 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="fun-fact-card purple-icon">
+                        <div class="fun-fact-icon">
+                            <i class="bi bi-lightbulb"></i>
+                        </div>
+                        <div>
+                            <h3 class="fun-fact-title">🏆 Achievement Driven</h3>
+                            <p class="fun-fact-text">
+                                From academic recognition to hackathons and technical projects, I enjoy challenging myself to improve.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fact 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="fun-fact-card">
+                        <div class="fun-fact-icon">
+                            <i class="bi bi-trophy"></i>
+                        </div>
+                        <div>
+                            <h3 class="fun-fact-title">🏐 Sporty Mindset</h3>
+                            <p class="fun-fact-text">
+                                I love playing volleyball — it keeps me active and has taught me teamwork, discipline, and a competitive spirit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fact 4 -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="fun-fact-card purple-icon">
+                        <div class="fun-fact-icon">
+                            <i class="bi bi-controller"></i>
+                        </div>
+                        <div>
+                            <h3 class="fun-fact-title">🎵 Music & Games</h3>
+                            <p class="fun-fact-text">
+                                I love listening to music to get into the flow state while coding, and enjoy strategy gaming for relaxation and quick decision-making.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fact 5 -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="fun-fact-card">
+                        <div class="fun-fact-icon">
+                            <i class="bi bi-tools"></i>
+                        </div>
+                        <div>
+                            <h3 class="fun-fact-title">🚀 Building Practical Projects</h3>
+                            <p class="fun-fact-text">
+                                Firm believer that the most lasting knowledge in computer science comes from turning abstract theory into working software systems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =====================================================================
+         9. CONTACT SECTION
+         Professional contact cards (Email, LinkedIn, GitHub placeholders)
+         and an interactive client-side validated form (Name, Email, Subject, Message).
+         No backend needed: JavaScript validates inputs & displays success alert.
+         ===================================================================== -->
+    <section id="contact" class="section-padding contact-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center">
+                <span class="section-tag">07  Get In Touch</span>
+                <h2 class="section-title">Contact <span class="text-gradient">Me</span></h2>
+                <p class="section-subtitle">
+                    Feel free to reach out for placement discussions, project inquiries, or software engineering opportunities.
+                </p>
+            </div>
+
+            <div class="row g-4 align-items-stretch">
+
+                <!-- Left Column: Contact Links & Social Media -->
+                <div class="col-lg-5">
+                    <div class="contact-info-card">
+                        <h3 class="h4 fw-bold text-white mb-2">Let's Connect</h3>
+                        <p class="text-secondary small mb-4">
+                            I am open to software development internship and placement opportunities. Reach out via email or connect with me on professional networks!
+                        </p>
+
+                        <!-- Email Placeholder -->
+                        <div class="contact-item">
+                            <div class="contact-icon-box">
+                                <i class="bi bi-envelope-at-fill"></i>
+                            </div>
+                            <div>
+                                <div class="contact-item-title">Official Email</div>
+                                <a href="mailto:akshaya.reddy@vit.ac.in" class="contact-item-val">
+                                    yedlaakshayareddy0105@gmail.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- LinkedIn Placeholder -->
+                        <div class="contact-item">
+                            <div class="contact-icon-box">
+                                <i class="bi bi-linkedin"></i>
+                            </div>
+                            <div>
+                                <div class="contact-item-title">LinkedIn Profile</div>
+                                <a href="#" class="contact-item-val placeholder-link" data-type="LinkedIn" data-name="Yedla Akshaya Reddy Profile">
+                                    linkedin.com/in/akshayareddy <i class="bi bi-box-arrow-up-right small"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- GitHub Placeholder -->
+                        <div class="contact-item">
+                            <div class="contact-icon-box">
+                                <i class="bi bi-github"></i>
+                            </div>
+                            <div>
+                                <div class="contact-item-title">GitHub Profile</div>
+                                <a href="#" class="contact-item-val placeholder-link" data-type="GitHub" data-name="Yedla Akshaya Reddy Code Repositories">
+                                    github.com/akshayareddy0105 <i class="bi bi-box-arrow-up-right small"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="contact-item">
+                            <div class="contact-icon-box">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <div>
+                                <div class="contact-item-title">Campus Location</div>
+                                <div class="contact-item-val">VIT University, Tamil Nadu, India</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Interactive Contact Form -->
+                <div class="col-lg-7">
+                    <div class="contact-form-card">
+                        <h3 class="h4 fw-bold text-white mb-3">Send a Message</h3>
+
+                        <!-- Success Alert Message (Shown dynamically by JavaScript) -->
+                        <div class="alert alert-success d-none mb-4" id="formSuccessAlert" role="alert">
+                            <!-- Populated by script.js -->
+                        </div>
+
+                        <form id="contactForm" novalidate>
+                            <div class="row g-3">
+                                <!-- Full Name Input -->
+                                <div class="col-md-6">
+                                    <label for="contactName" class="form-label">Full Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="contactName" placeholder="Your name" required>
+                                    <div class="invalid-feedback">Please enter your name.</div>
+                                </div>
+
+                                <!-- Email Input -->
+                                <div class="col-md-6">
+                                    <label for="contactEmail" class="form-label">Email Address <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" id="contactEmail" placeholder="your.email@example.com" required>
+                                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                                </div>
+
+                                <!-- Subject Input -->
+                                <div class="col-12">
+                                    <label for="contactSubject" class="form-label">Subject <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="contactSubject" placeholder="e.g. Placement Inquiry / Project Collaboration" required>
+                                    <div class="invalid-feedback">Please provide a subject.</div>
+                                </div>
+
+                                <!-- Message Input -->
+                                <div class="col-12">
+                                    <label for="contactMessage" class="form-label">Your Message <span class="text-danger">*</span></label>
+                                    <textarea class="form-control" id="contactMessage" rows="4" placeholder="Write your message here (minimum 10 characters)..." required></textarea>
+                                    <div class="invalid-feedback">Please enter a message of at least 10 characters.</div>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn btn-cyan w-100 py-2">
+                                        <i class="bi bi-send-fill"></i> Send Message
+                                    </button>
+                                    <small class="text-secondary d-block text-center mt-2">
+                                        <i class="bi bi-shield-check text-cyan"></i> Client-side validated form powered by Vanilla JavaScript.
+                                    </small>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =====================================================================
+         10. FOOTER
+         Semantic footer with copyright, navigation links, and back-to-top.
+         ===================================================================== -->
+    <footer class="portfolio-footer">
+        <div class="container">
+            <div class="row align-items-center g-3">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">
+                        &copy; 2026 <strong class="text-white">Yedla Akshaya Reddy</strong>. All rights reserved.
+                    </p>
+                    <small class="text-secondary">
+                        Integrated M.Tech Computer Science • VIT
+                    </small>
+                </div>
+                <div class="col-md-6 text-center text-md-end footer-nav">
+                    <a href="#hero">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#education">Education</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- =====================================================================
+         FLOATING SCROLL-TO-TOP BUTTON
+         Smoothly scrolls back to top when clicked; toggled by JavaScript.
+         ===================================================================== -->
+    <button type="button" id="scrollTopBtn" aria-label="Scroll to top" title="Scroll to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+
+    <!-- =====================================================================
+         MODAL 1: RESUME MODAL
+         Shows resume download instructions & link to assets folder.
+         ===================================================================== -->
+    <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white" id="resumeModalLabel">
+                        <i class="bi bi-file-earmark-person text-cyan me-2"></i>Curriculum Vitae / Resume
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-secondary small">
+                    <p class="text-white fw-bold mb-2">Student Profile: Yedla Akshaya Reddy</p>
+                    <p>Degree: Integrated M.Tech in Computer Science and Engineering (3rd Year, VIT)</p>
+                    <div class="p-3 bg-dark rounded border border-secondary border-opacity-25 mb-3">
+                        <span class="text-purple fw-bold d-block mb-1">To Link Your PDF File:</span>
+                        <span>Place your exported PDF file as <code>assets/Akshaya_Reddy_Resume.pdf</code> in the project folder.</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                    <a href="assets/Akshaya_Reddy_Resume.pdf" download="Akshaya_Reddy_Resume.pdf" class="btn btn-cyan btn-sm">
+                        <i class="bi bi-download"></i> Download PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- =====================================================================
+         MODAL 2: PROJECT 1 DETAILS MODAL
+         ===================================================================== -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white">Cloud-Based Smart Crowdfunding Platform</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-secondary">
+                    <h6 class="text-cyan fw-bold">Project Architecture & Objective</h6>
+                    <p>
+                        A cloud-enabled web platform designed to streamline secure fundraising campaigns. 
+                        It addresses the lack of transparency in traditional crowdfunding by implementing 
+                        verifiable campaign milestones and transparent donation records.
+                    </p>
+                    <h6 class="text-cyan fw-bold mt-3">Key Academic Highlights</h6>
+                    <ul>
+                        <li>Engineered responsive user and creator dashboards using Bootstrap 5 and clean CSS3.</li>
+                        <li>Designed MongoDB document schemas for campaigns, donations, and user verification.</li>
+                        <li>Implemented client-side input validation and dynamic campaign progress tracking.</li>
+                    </ul>
+                    <div class="p-2 bg-dark rounded border border-secondary border-opacity-25 small mt-3">
+                        <strong class="text-purple">Technologies:</strong> Cloud Computing, MongoDB, JavaScript, Bootstrap 5, HTML5/CSS3.
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- =====================================================================
+         MODAL 3: PROJECT 2 DETAILS MODAL
+         ===================================================================== -->
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white">Student Dropout Analysis using Data Warehousing & Data Mining</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-secondary">
+                    <h6 class="text-cyan fw-bold">Project Architecture & Objective</h6>
+                    <p>
+                        This project focuses on applying data warehousing principles (ETL pipelines) and data mining 
+                        classification algorithms to analyze student demographics, semester marks, and attendance patterns 
+                        to predict at-risk students ahead of time.
+                    </p>
+                    <h6 class="text-cyan fw-bold mt-3">Key Academic Highlights</h6>
+                    <ul>
+                        <li>Performed data cleaning, missing value imputation, and feature selection on student records.</li>
+                        <li>Constructed a star-schema relational model in SQL for structured multidimensional analysis.</li>
+                        <li>Trained classification algorithms in Python to evaluate prediction accuracy and recall.</li>
+                    </ul>
+                    <div class="p-2 bg-dark rounded border border-secondary border-opacity-25 small mt-3">
+                        <strong class="text-purple">Technologies:</strong> Python, Data Mining, SQL, Data Warehousing, Data Visualization.
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- =====================================================================
+         MODAL 4: PROJECT 3 DETAILS MODAL
+         ===================================================================== -->
+    <div class="modal fade" id="projectModal3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white">Solar Farm Performance Prediction using AI</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-secondary">
+                    <h6 class="text-cyan fw-bold">Project Architecture & Objective</h6>
+                    <p>
+                        Solar power generation is inherently variable due to cloud cover, humidity, and temperature. 
+                        This project applies machine learning algorithms to model and predict solar farm electrical output 
+                        based on historical weather patterns.
+                    </p>
+                    <h6 class="text-cyan fw-bold mt-3">Key Academic Highlights</h6>
+                    <ul>
+                        <li>Integrated environmental weather data metrics including solar irradiance and ambient temperature.</li>
+                        <li>Trained and benchmarked regression models to minimize mean squared error in generation forecasts.</li>
+                        <li>Demonstrated how AI can assist clean energy operators in grid power scheduling.</li>
+                    </ul>
+                    <div class="p-2 bg-dark rounded border border-secondary border-opacity-25 small mt-3">
+                        <strong class="text-purple">Technologies:</strong> Python, AI / Machine Learning, Weather Data APIs, NumPy, Pandas.
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- =====================================================================
+         MODAL 5: PROJECT 4 DETAILS MODAL
+         ===================================================================== -->
+    <div class="modal fade" id="projectModal4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white">AI-based E-Commerce / Shopping Assistant</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-secondary">
+                    <h6 class="text-cyan fw-bold">Project Architecture & Objective</h6>
+                    <p>
+                        A responsive shopping web interface that combines intuitive browsing with an intelligent 
+                        virtual assistant designed to understand user intent and suggest products dynamically.
+                    </p>
+                    <h6 class="text-cyan fw-bold mt-3">Key Academic Highlights</h6>
+                    <ul>
+                        <li>Designed dynamic product card listings with filterable categories and interactive shopping cart state.</li>
+                        <li>Implemented conversational helper logic for answering product queries and narrowing choices.</li>
+                        <li>Maintained clean DOM rendering using vanilla JavaScript and Bootstrap 5 components.</li>
+                    </ul>
+                    <div class="p-2 bg-dark rounded border border-secondary border-opacity-25 small mt-3">
+                        <strong class="text-purple">Technologies:</strong> JavaScript, Python, Bootstrap 5, AI/NLP Concepts, REST API.
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- =====================================================================
+         MODAL 6: PLACEHOLDER LINK NOTIFICATION MODAL
+         Triggered by placeholder buttons (GitHub, Certificates, Socials)
+         ===================================================================== -->
+    <div class="modal fade" id="placeholderModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white" id="placeholderModalTitle">Academic Placeholder</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="placeholderModalBody">
+                    <!-- Populated dynamically by script.js -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-cyan btn-sm" data-bs-dismiss="modal">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- =====================================================================
+         SCRIPTS INCLUSION
+         Bootstrap 5 Bundle JS (Includes Popper for dropdowns & modals)
+         Custom script.js containing clean, beginner-friendly DOM manipulation.
+         ===================================================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
